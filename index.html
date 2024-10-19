@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CLIMA</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <style>
+      .fondo{
+        background: rgb(254,193,255);
+background: linear-gradient(90deg, rgb(235, 193, 255) 0%, rgb(173, 77, 237) 100%);
+      }
+      #divResultado{ 
+        background: rgb(232, 194, 247);
+      }
+      h1{
+        color: rgb(223, 83, 125);
+      }
+      .btn-success{
+        background:rgb(178, 136, 255);
+        border: 1px solid rgb(166, 123, 247);
+        
+      }
+      .btn-success:hover{
+        background:rgb(178, 112, 231);
+        border: 1px solid rgb(178, 112, 231);;
+        
+      }
+      .btn-succes:active{
+        background:rgb(178, 112, 231);
+        border: 1px solid rgb(178, 112, 231);;
+        
+      }
+      
+    </style>
+</head>
+<body class="text-center">
+
+    <nav class="navbar" style="background-color: #f082bf;">
+        <div class="container-fluid">
+          <h1 class="m-auto text-white">PRONÓSTICO API CLIMA</h1>
+        </div>
+      </nav>
+    
+    
+<div class="container-fluid">
+    <div class="card shadow border w-50 m-auto p-3">
+                <div class="mb-3">
+                  <input type="text" class="form-control text-center" id="url" placeholder="URL">
+                </div>
+    
+              <div class="row">
+                <div class="col"><button type="button" class="btn btn-success my-2 w-100" onclick="consultarAPI()">CONSULTAR</button></div>
+                <div class="col"><button type="button" class="btn btn-danger my-2 w-100" onclick="borrar()">BORRAR</button></div>
+              </div>
+    </div>
+
+      <div id="datos" class="card shadow border w-50 m-auto text-center my-4 p-2"></div>
+      <div id="divResultado" class="d-flex justify-content-center"></div>
+</div>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
